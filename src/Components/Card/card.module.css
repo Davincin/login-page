@@ -1,0 +1,80 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  min-height: 500px;
+  background-color: #fff;
+}
+
+.card__logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: scale-down;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__input, .card__inputOtp {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  border: 1px solid rgb(201, 201, 201);
+  outline: none;
+  border-radius: 5px;
+}
+
+.card__inputOtp {
+  animation: fadeIn .6s forwards ease;
+}
+
+.card__button {
+  display: flex;
+  justify-content: center;
+  width: 82%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .3s;
+  
+}
+
+.card__buttonText {
+  margin: 0;
+  margin-right: auto;
+}
+
+.card__button:disabled {
+  cursor: not-allowed;
+  background-color: #DADADA;
+}
+
+.card__lockIcon {
+  margin-right: auto;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
